@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+:root{
+	--principal: #3F51B5;
+	--principalOsc: #303F9F;
+	--principalCla: #C5CAE9;
+	--contraste: #FFC107;
+	
+	--fuenteSerif:Garamond;
+}
+
+*{
+	margin:0;
+	padding:0;	
+}
+
+header{
+	background-color:var(--principal);
+	display:flex;
+	flex-direction: row;
+	padding:10px;
+}
+
+#cabecera_izq{
+	width:100%;
+	padding-top:20px;
+	
+	display:flex;
+	flex-direction: column;
+	
+	justify-content: flex-end;
+	align-items: flex-start;
+		
+}
+
+#cabecera_der{
+	width:400px;
+	
+	display:flex;
+	flex-direction: column;
+	
+	justify-content: flex-end;
+	align-items: flex-end;
+	
+}
+
+h1{
+	color:var(--contraste);
+	font-family: var(--fuenteSerif);
+}
+
+h2{
+	color:var(--contraste);
+	font-family: Comic sans MS;
+}
+
+h3{
+	color:var(--contraste);
+	font-family: var(--fuenteSerif);
+}
+
+form  h3 {
+	text-align: right;
+}
+
+/*----====FORM LOGIN====----*/
+
+.login {  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "tituloForm tituloForm"
+    "vacio txtUsuario"
+    "btnSubmit txtPass"
+    "enlaceRegistro enlaceRegistro";
+}
+
+.tituloForm { grid-area: tituloForm;
+background-color: pink;
+ }
+
+.enlaceRegistro { grid-area: enlaceRegistro; 
+background-color: green;
+}
+
+.txtUsuario { grid-area: txtUsuario;
+background-color: orange;
+ }
+
+.txtPass { grid-area: txtPass;
+background-color: teal;
+ }
+
+.btnSubmit { grid-area: btnSubmit; 
+background-color: purple;
+}
+
+.vacio { grid-area: vacio;
+background-color: yellow;
+ }
+
+input[type="text"],
+input[type="password"]{
+	width:150px;
+		margin-top: 4px;
+	
+}
+input[type="submit"]{
+
+	padding:0px 10px;
+	margin-top: 4px;
+}
+
+
+/* #contenido_form_login{ */
+/* 	display:flex; */
+/* 	flex-direction: column; */
+/* 	justify-content: flex-end; */
+/* 	align-items: flex-end; */
+/* } */
+
+/*----====ESTILOS DEL PIE====----*/
+
+
+footer{
+	background-color: yellow;
+	display:flex;
+	flex-direction: row;
+	
+
+}
+
+#footer_izq{
+	background-color: orange;
+	width:50%;
+	padding:10px;
+	
+	display:flex;
+	flex-direction: column;
+	
+	justify-content: flex-end;
+	align-items: flex-start;	
+}
+
+#footer_der{
+	background-color: olive;
+	width:50%;
+	padding:10px;
+	
+	display:flex;
+	flex-direction: row;
+	
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+/*----====Menu de navegacion====-----*/
+
+nav{
+	background-color: var(--principalOsc);	
+}
+
+#menu{
+	display:flex;
+	flex-direction: row;
+}
+
+.menu_elemento{
+	list-style: none;
+	
+}
+
+.menu_elemento_link:link{
+	display: block;
+	padding: 10px 25px 10px 25px;
+	color: var(--contraste);
+	text-decoration: none;}
+
+.menu_elemento_link:visited{
+	color:var(--contraste);
+}
+
+.menu_elemento_link:hover{
+	background-color: var(--principalCla);
+	color: var(--principal);
+}
+
+.menu_elemento_link:active{
+	background-color: var(--contraste);
+}
+
+
+

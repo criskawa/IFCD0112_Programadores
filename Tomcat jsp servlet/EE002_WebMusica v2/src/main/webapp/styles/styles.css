@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+:root { 
+	--principal: #3f51b5;
+	--principalOsc: #303f9f;
+	--principalCla: #c5cae9;
+	--contraste:#ffc107;
+	--fuenteComic: Comic sans MS;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: var(--principal);
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+}
+
+#cabecera_izq {
+	
+	width: 100%;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+#cabecera_der {
+	
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	
+}
+
+h1 {
+	color:var(--contraste);
+	font-family: var(--fuenteComic);
+}
+
+h2 {
+	color:var(--contraste);
+	font-family: var(--fuenteComic);
+}
+
+h3 {
+	color:var(--contraste);
+	font-family: var(--fuenteComic);
+	
+}
+
+form>h3 {
+	
+	text-align: right;
+}
+
+
+
+/*====---Form LOGIN---====*/
+
+.login {  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo titulo"
+    "vacio txtUsuario"
+    "btnSubmit txtPass"
+    "enlaceRegistro enlaceRegistro";
+}
+
+.titulo { grid-area: titulo; }
+
+.vacio { grid-area: vacio; }
+
+.txtUsuario { grid-area: txtUsuario; }
+
+.btnSubmit { grid-area: btnSubmit; }
+
+.txtPass { grid-area: txtPass; }
+
+.enlaceRegistro { grid-area: enlaceRegistro; }
+
+
+
+
+/* #contenido_form_login { */
+/* 	background-color: yellow; */
+/* 	display: flex; */
+/* 	flex-direction: column; */
+/* 	justify-content: flex-end; */
+/* 	align-items: flex-end; */
+/* } */
+
+/*----====ESTILOS DEL PIE====----*/
+footer {
+	background-color: yellow;
+	display: flex;
+	flex-direction: row;
+}
+
+#footer_izq {
+	background-color: orange;
+	width: 50%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+#footer_der {
+	background-color: olive;
+	width: 50%;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+/**---Menu de navegacion---**/
+nav {
+	background-color: var(--principalOsc);
+}
+
+#menu {
+	display: flex;
+	flex-direction: row;
+}
+
+.menu_elemento{
+	
+	list-style: none;
+}
+
+.menu_elemento_link:link{
+	
+	display:block;
+	padding: 10px 25px 10px 25px;
+	color:black;
+}
+
+.menu_elemento_link:visited{
+	color: black;
+}
+.menu_elemento_link:hover{
+	background-color: var(--principalCla);
+}
+
+.menu_elemento_link:active{
+	background-color: var(--contraste);
+}
+
