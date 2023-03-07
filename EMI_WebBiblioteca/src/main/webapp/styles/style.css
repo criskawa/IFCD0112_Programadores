@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+:root{
+	
+	
+	
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	
+	font-family: Arial, Helvetica, sans serif;
+	font-size: medium;
+
+    color:#212121;
+}
+
+/*---------------------CABECERA----------------------*/
+
+header{
+    background-color: rgb(0, 128, 128);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /*eje principal, en este caso filas*/
+    align-items: flex-start; /*eje secundario, en este caso columnas*/
+    padding: 10px;
+}
+
+#icono_sello{
+   
+}
+
+h1{
+    padding-left: 20px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*---------------------BARRA MENU----------------------*/
+
+nav{
+    background-color:  aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#barra_navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#barra_navegacion li{
+    list-style: none;
+}
+
+#barra_navegacion li a:link{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px 10px 25px;
+}
+
+#barra_navegacion li a:visited{
+    color: darkgreen;
+}
+
+#barra_navegacion li a:hover{
+    background-color: pink;
+}
+
+#barra_navegacion li a:active{
+    background-color: aqua;
+
+}

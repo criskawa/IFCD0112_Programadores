@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+
+.form_modificar {  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: min-content min-content min-content min-content min-content;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "lbl_id txt_id"
+    "lbl_titulo txt_titulo"
+    "lbl_autor cmb_autor"
+    "lbl_precio txt_precio"
+    "botonera botonera";
+}
+
+
+.lbl_id { grid-area: lbl_id; }
+
+.lbl_titulo { grid-area: lbl_titulo; }
+
+.lbl_autor { grid-area: lbl_autor; }
+
+.lbl_precio { grid-area: lbl_precio; }
+
+.txt_id { grid-area: txt_id; }
+
+.txt_titulo { grid-area: txt_titulo; }
+
+.cmb_autor { grid-area: cmb_autor; }
+
+.txt_precio { grid-area: txt_precio; }
+
+.botonera { grid-area: botonera; }

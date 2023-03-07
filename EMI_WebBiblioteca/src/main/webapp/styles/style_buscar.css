@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+.formulario_buscar {  
+	display: grid;
+  	grid-template-columns: min-content min-content min-content auto;
+ 	grid-template-rows: auto auto auto auto;
+ 	gap: 8px 8px;
+ 	grid-auto-flow: row;
+	grid-template-areas:
+		"titulo titulo titulo titulo"
+		"lbl1 txt1 txt1 boton"
+		"lbl2 txt2 txt2 boton"
+ 	    "lbl3 txt3 select boton";
+}
+
+section{
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid black;
+}
+
+.titulo { 
+	grid-area: titulo; 
+}
+
+.lbl1 { 
+	grid-area: lbl1; 
+}
+
+.lbl2 { 
+	grid-area: lbl2; 
+}
+
+.lbl3 { 
+	grid-area: lbl3; 
+}
+
+.txt1 { 
+	grid-area: txt1; 
+}
+
+.txt2 { 
+	grid-area: txt2; 
+}
+
+.txt3 { 
+	grid-area: txt3; 
+}
+
+.select {
+	grid-area: select;
+}
+
+#select_filtro_precio {
+	border: 1px solid black;
+
+	background-image: url('imagenes/flecha_abajo.png');
+	background-size: 100% 100%;
+}
+
+#imagen_lupa {
+	width: 25px;
+	height: 25px;
+}
+	
+.boton { 
+	grid-area: boton;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+}
+
+th {
+  background-color: #eef3f7;
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+
